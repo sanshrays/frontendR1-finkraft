@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/frontendR1-finkraft/static/css/main.dbdb801f.css",
-    "main.js": "/frontendR1-finkraft/static/js/main.19b70360.js",
+    "main.js": "/frontendR1-finkraft/static/js/main.059fbfbd.js",
     "static/js/453.cdf21122.chunk.js": "/frontendR1-finkraft/static/js/453.cdf21122.chunk.js",
     "static/media/download.jpeg": "/frontendR1-finkraft/static/media/download.f2253cfa3efd319ee10a.jpeg",
     "index.html": "/frontendR1-finkraft/index.html",
     "main.dbdb801f.css.map": "/frontendR1-finkraft/static/css/main.dbdb801f.css.map",
-    "main.19b70360.js.map": "/frontendR1-finkraft/static/js/main.19b70360.js.map",
+    "main.059fbfbd.js.map": "/frontendR1-finkraft/static/js/main.059fbfbd.js.map",
     "453.cdf21122.chunk.js.map": "/frontendR1-finkraft/static/js/453.cdf21122.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dbdb801f.css",
-    "static/js/main.19b70360.js"
+    "static/js/main.059fbfbd.js"
   ]
 }
