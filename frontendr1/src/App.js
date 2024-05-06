@@ -15,11 +15,7 @@ function App() {
                 Home
               </Link>
             </li>
-            <li>
-              <Link to="/login" style={{ color: "black" }}>
-                Login
-              </Link>
-            </li>
+            
           </ul>
         </nav>
 
