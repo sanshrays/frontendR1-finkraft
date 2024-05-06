@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { AgGridReact } from "ag-grid-react"; // React Data Grid Component
-import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
-import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
+import { Link, useNavigate } from "react-router-dom";
+import { AgGridReact } from "ag-grid-react"; 
+import "ag-grid-community/styles/ag-grid.css";
+import "ag-grid-community/styles/ag-theme-quartz.css";
 
 const Dashboard = () => {
-  // Row Data: The data to be displayed.
+    const navigate = useNavigate();
   const [rowData, setRowData] = useState([
     { make: "Tesla", model: "Model Y", price: 64950, electric: true },
     { make: "Ford", model: "F-Series", price: 33850, electric: false },
     { make: "Toyota", model: "Corolla", price: 29600, electric: false },
   ]);
 
-  // Column Definitions: Defines the columns to be displayed.
   const [colDefs, setColDefs] = useState([
     { field: "make" },
     { field: "model" },
@@ -19,14 +19,25 @@ const Dashboard = () => {
     { field: "electric" },
   ]);
 
-  // ...
+  const handleLogout = () => {
+    navigate("/")
+  }
+
   return (
-    // wrapping container with theme & size
-    <div
-      className="ag-theme-quartz" // applying the grid theme
-      style={{ height: 500 }} // the grid will fill the size of the parent container
-    >
-      <AgGridReact rowData={rowData} columnDefs={colDefs} />
+    <div>
+      <div style={{ textAlign: "right", padding: "10px" }}>
+        {/* Logout Link */}
+        <Link to="/" onClick={handleLogout}>
+          Logout
+        </Link>
+      </div>
+      <h1>WELCOME TO DASHBOARD</h1>
+      <div
+        className="ag-theme-quartz" 
+        style={{ height: 500 }} 
+      >
+        <AgGridReact rowData={rowData} columnDefs={colDefs} />
+      </div>
     </div>
   );
 };
