@@ -6,9 +6,22 @@ import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    
     <Router>
       <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/" style={{ color: "black" }}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/login" style={{ color: "black" }}>
+                Login
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
         <Routes>
           <Route path="/login" element={<LoginPage />} />
